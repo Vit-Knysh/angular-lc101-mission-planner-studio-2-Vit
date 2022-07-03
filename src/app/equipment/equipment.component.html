@@ -1,4 +1,8 @@
 <h3>Equipment</h3>
 <ul>
-  <li *ngFor = "let item of equipmentItems">{{item}}</li>
+  <li *ngFor = "let item of equipmentItems">
+    <span (click) = "edit(item)" class = "editable-text">
+    {{item}}
+  </span>
+  </li>
 </ul>
